@@ -60,7 +60,15 @@ input, label {
     margin-bottom: 20px;
 }
 
-h2 {
+h2, p {
     display: block;
     margin: 10px 0;
+    margin-left: 20px;
  }
+
+ .picture {
+    height: 100vh;
+    background-image: url(./background.jpg);
+    background-size: cover;
+ }
+
