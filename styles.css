@@ -22,7 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    appearance: none;
     border: 1px solid black;
     height: 100vh;
 }
@@ -37,6 +36,7 @@ form {
     padding: 20px;
     background-color: #FFFFFF;
     margin-bottom: 10px;
+    appearance: none;
 }
 
 .container button {
@@ -71,4 +71,15 @@ h2, p {
     background-image: url(./background.jpg);
     background-size: cover;
  }
+
+ .form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='tel'],
+.form-row input[type='password'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 14px;
+}
 
