@@ -12,7 +12,8 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    display: flex;
+    font-size: 25px;
     padding:0 250px;
     background-color: rgb(105,105,105, 0.1);
     margin-top: 310px;
