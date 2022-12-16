@@ -13,7 +13,7 @@ body {
 
 .title {
     display: flex;
-    font-size: 25px;
+    font-size: 1.5rem;
     padding:0 250px;
     background-color: rgb(105,105,105, 0.1);
     margin-top: 310px;
@@ -98,4 +98,50 @@ form h2 {
 
 a:link {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    body {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .form-row, .footer {
+        margin-left: 30vw;
+    }
+
+    .picture {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        background-size: 100vw;
+    }
+
+    .title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 200px;
+        height: 55px;
+    }
+
+    .yarn {
+        margin: none;
+        size: auto;
+    }
+    
+    .abstract {
+        display: none;
+    }
 }
