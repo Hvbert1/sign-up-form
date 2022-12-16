@@ -60,7 +60,7 @@ input, label {
     margin-bottom: 20px;
 }
 
-h2, p {
+h2, p , a{
     display: block;
     margin: 10px 0;
     margin-left: 20px;
@@ -72,7 +72,7 @@ h2, p {
     background-size: cover;
  }
 
- .form-row input[type='text'],
+.form-row input[type='text'],
 .form-row input[type='email'],
 .form-row input[type='tel'],
 .form-row input[type='password'] {
@@ -81,5 +81,6 @@ h2, p {
   border-radius: 3px;
   padding: 7px;
   font-size: 14px;
+  max-width: 400px;
 }
 
