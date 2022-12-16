@@ -13,30 +13,27 @@ body {
 .title {
     font-size: 2rem;
     padding:0 250px;
-    border: 1px solid black;
     background-color: rgb(105,105,105, 0.1);
-    margin-top: 300px;
+    margin-top: 310px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: 1px solid black;
     height: 100vh;
 }
 
 .abstract {
     margin-top: 200px;
-    margin-bottom: 100px
+    margin-bottom: 50px;
 }
 
 form {
-    border: 1px solid black;
     padding: 20px;
     background-color: #FFFFFF;
-    margin-bottom: 10px;
     appearance: none;
+    box-shadow: 0px 5px 5px lightgrey;
 }
 
 .container button {
@@ -53,17 +50,20 @@ form {
     cursor: pointer;
 }
 
-input, label {
-    display:block;
+.form-row label{
+    display: block;
 }
+
 .form-row {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    display: inline-block;
+    width: 40%;
 }
 
 h2, p , a{
     display: block;
-    margin: 10px 0;
-    margin-left: 20px;
+    margin: 10px 200px 10px 50px;
  }
 
  .picture {
@@ -77,10 +77,18 @@ h2, p , a{
 .form-row input[type='tel'],
 .form-row input[type='password'] {
   background-color: #FFFFFF;
+
   border: 1px solid #D6D9DC;
   border-radius: 3px;
+
   padding: 7px;
   font-size: 14px;
-  max-width: 400px;
+  width: 100%;
+  max-width: 85%;
+  box-sizing: border-box;
 }
 
+form h2 {
+    margin: 30px;
+    color: orange;
+}
