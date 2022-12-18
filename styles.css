@@ -1,22 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'IBM Plex Serif', serif;
   }
 
 body {
     display: flex;
-    align-items: flex-start;
     background-color: #EAEDF0;
+}
+
+.picture {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(./background.jpg);
+    background-size: cover;
 }
 
 .title {
     display: flex;
+    justify-content: center;
     font-size: 1.5rem;
-    padding:0 250px;
     background-color: rgb(105,105,105, 0.1);
     margin-top: 310px;
+    margin-bottom: 20px;
+}
+
+.credit {
+    display: inline;
+    margin-left: 20px;
+    margin-bottom: 150px;
 }
 
 .container {
@@ -64,15 +79,9 @@ form {
     width: 40%;
 }
 
-h2, p , a{
+h2, .container p, .container a{
     display: block;
     margin: 10px 200px 10px 50px;
- }
-
- .picture {
-    height: 100vh;
-    background-image: url(./background.jpg);
-    background-size: cover;
  }
 
 .form-row input[type='text'],
@@ -96,13 +105,17 @@ form h2 {
     color: orange;
 }
 
-a:link {
+a {
     text-decoration: none;
+    color: brown;
 }
 
-@media only screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 600px) {
 
     body {
+        display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -121,27 +134,23 @@ a:link {
     }
 
     .picture {
+        max-width: none;
         width: 100vw;
         height: 30vh;
-        display: flex;
-        background-size: 100vw;
     }
 
     .title {
-        display: flex;
-        text-align: center;
-        justify-content: center;
+        margin-top: 40%;
         width: 100vw;
-        margin-top: 200px;
-        height: 55px;
+        height: 60px;
     }
 
     .yarn {
-        margin: none;
         size: auto;
+        height: 100%;
     }
     
-    .abstract {
+    .abstract{
         display: none;
     }
 }
