@@ -7,6 +7,7 @@
 body {
     display: flex;
     background-color: #EAEDF0;
+    height: 100vh;
 }
 
 .picture {
@@ -14,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     background-image: url(./background.jpg);
     background-size: cover;
 }
@@ -24,26 +24,20 @@ body {
     justify-content: center;
     font-size: 1.5rem;
     background-color: rgb(105,105,105, 0.1);
-    margin-top: 310px;
+    margin-top: 300px;
     margin-bottom: 20px;
 }
 
 .credit {
     display: inline;
-    margin-left: 20px;
+    margin-left: 10%;
     margin-bottom: 150px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-}
-
-.abstract {
-    margin-top: 200px;
-    margin-bottom: 50px;
+    justify-content: center;
 }
 
 form {
@@ -51,7 +45,7 @@ form {
     background-color: #FFFFFF;
     appearance: none;
     box-shadow: 0px 5px 5px lightgrey;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .container button {
@@ -89,10 +83,8 @@ h2, .container p, .container a{
 .form-row input[type='tel'],
 .form-row input[type='password'] {
   background-color: #FFFFFF;
-
   border: 1px solid #D6D9DC;
   border-radius: 3px;
-
   padding: 7px;
   font-size: 14px;
   width: 100%;
@@ -110,47 +102,42 @@ a {
     color: brown;
 }
 
-
-
 @media only screen and (max-width: 600px) {
 
     body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
-        height: 100vh;
     }
 
     form {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 100vw;
+        margin-bottom: 20px;
     }
 
     .form-row, .footer {
         margin-left: 30vw;
     }
 
-    .picture {
-        max-width: none;
-        width: 100vw;
-        height: 30vh;
-    }
-
     .title {
-        margin-top: 40%;
+        margin-top: 20%;
         width: 100vw;
         height: 60px;
     }
 
+    .picture {
+        max-width: none;
+        width: 100vw;
+        height: 20vh;
+    }
+
     .yarn {
-        size: auto;
         height: 100%;
     }
     
-    .abstract{
+    .abstract {
         display: none;
     }
 }
